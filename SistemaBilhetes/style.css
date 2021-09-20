@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body {
+    background: rgb(252, 253, 238);
+}
+
+.navbar {
+    width: 100vw;
+    background: rgb(38, 32, 48);
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar li {
+    padding: 1em 1em;
+    height: 3.7em;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding: 0.3em 0;
+}
+
+.navbar a:before,
+.navbar a:after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+.navbar a:before {
+    left: 0px;
+    top: 0px;
+}
+
+.navbar a:after {
+    right: 0px;
+    bottom: 0px;
+}
+
+.navbar a:hover:before,
+.navbar a:hover:after {
+    opacity: 1;
+    width: 100%;
+}
