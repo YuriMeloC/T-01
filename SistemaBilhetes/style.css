@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+body::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #262030;
+}
+
+body {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(240,202,255,1) 10%, rgba(233,176,255,1) 50%, rgba(240,202,255,1) 90%, rgba(255,255,255,1) 100%);
+}
+
+.navbar {
+    width: 100vw;
+    background: #262030;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar li {
+    padding: 1em 1em;
+    height: 3.7em;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    padding: 0.3em 0;
+}
+
+.navbar a:before,
+.navbar a:after {
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #f0caff;
+    transition: all 0.3s;
+}
+
+.navbar a:before {
+    left: 0px;
+    top: 0px;
+}
+
+.navbar a:after {
+    right: 0px;
+    bottom: 0px;
+}
+
+.navbar a:hover:before,
+.navbar a:hover:after {
+    opacity: 1;
+    width: 100%;
+}
+
+.article main {
+    position: auto;
+    padding: 2em 2em;
+    margin: 2em 20em;
+    background: rgb(250, 237, 255);
+    box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.25);
+    border-radius: 10px;
+}
+
+.article_footer main {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 15em;
+    margin: 2em 20em;
+    background: rgb(250, 237, 255);
+    box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.25);
+    border-radius: 10px;
+}
+
+.article_footer p {
+    vertical-align:middle;
+}
+
+
+
+/* Login */
+.form {
+    width: 500px;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #262030;
+    text-align: center;
+    border-radius: 24px;
+    font-family: 'Poppins';
+}
+
+.form h1 {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+.form h5 {
+    color: rgb(190, 190, 190);
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
+.form input[type = "text"], .form input[type = "password"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(220, 136, 253);
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s; 
+}
+
+.form input[type = "text"]:focus, .form input[type = "password"]:focus {
+    width: 280px;
+    border-color: rgba(240,202,255,1);
+}
+
+.form input[type = "submit"] {
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgba(240,202,255,1);
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.form input[type = "submit"]:hover {
+    background: rgba(240,202,255,1);
+}
