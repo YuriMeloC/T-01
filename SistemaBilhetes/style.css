@@ -20,6 +20,8 @@ body::-webkit-scrollbar-thumb {
 body {
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(240,202,255,1) 10%, rgba(233,176,255,1) 50%, rgba(240,202,255,1) 90%, rgba(255,255,255,1) 100%);
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar {
@@ -97,81 +99,263 @@ body {
     vertical-align:middle;
 }
 
-.espetaculos main {
-    position: auto;
-    padding: 2em 2em;
-    margin: 2em 20em;
-    background: rgb(250, 237, 255);
-    box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.25);
-    border-radius: 10px;
-    border-color: aqua;
-    border-style: solid;
-    border-width: 5px;
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin: 10em 31.5%;
+}
+
+.container .title {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.container .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+.container form .user-details .input-box {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition:  all 0.3s ease;
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid {
+    border-color: #9b59b6;
+}
+
+/*
+.container form .gender-details .gender-title {
+    font-size: 20px;
+    font-weight:  500;
+}
+
+.container form .gender-details .category {
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.gender-details .category label {
+    display: flex;
+    align-items: center;
+}
+
+.gender-details .category .dot {
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius:  50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+    border-color:  #d9d9d9;
+    background: #9b59b6;
+}
+
+.container form input[type="radio"] {
+    display: none;
+}
+*/
+
+.container form .register {
+    height: 45px;
+    margin: 45px 0;
+}
+
+.container form .register input {
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight:  500;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    transition: all 0.3s ease;
+}
+
+.container form .register input:hover {
+    background: linear-gradient(135deg, #9b59b6, #71b7e6);
+    letter-spacing: 1px;
 }
 
 
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%;
+    }
+
+    .container form .user-details .input-box {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .container form .gender-details .category {
+        width: 100%;
+    }
+
+    .container form .user-details {
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+
+    .user-details::-webkit-scrollbar {
+        width: 0;
+    }
+}
 
 /* Login */
-.form {
-    width: 500px;
-    padding: 30px;
+.form_Login{
+    margin: 17em 78vh;
+    background: #fff;
+    max-width: 350px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+.form_Login form .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin: 20px 0 10px 0;
+    position: relative;
+}
+
+.form_Login form .title:before{
+    content: '';
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #262030;
-    text-align: center;
-    border-radius: 24px;
-    font-family: 'Poppins';
+    height: 4px;
+    width: 33px;
+    left: 0px;
+    bottom: 3px;
+    border-radius: 5px;
+    background: linear-gradient(to right, rgb(212, 117, 250) 0%, rgb(255, 255, 255) 100%);
 }
 
-.form h1 {
-    color: white;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: 'Poppins';
-}
-.form h5 {
-    color: rgb(190, 190, 190);
-    font-weight: 500;
-    font-family: 'Poppins';
+.form_Login form .input-box{
+    width: 100%;
+    height: 45px;
+    margin-top: 25px;
+    position: relative;
 }
 
-.form input[type = "text"], .form input[type = "password"] {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid rgb(220, 136, 253);
-    padding: 14px 10px;
-    width: 200px;
+.form_Login form .input-box input{
+    width: 100%;
+    height: 100%;
     outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s; 
+    font-size: 16px;
+    border: none;
 }
 
-.form input[type = "text"]:focus, .form input[type = "password"]:focus {
-    width: 280px;
-    border-color: rgba(240,202,255,1);
+.form_Login form .underline::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    left: 0;
+    bottom: 0;
 }
 
-.form input[type = "submit"] {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid rgba(240,202,255,1);
-    padding: 14px 40px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
+.form_Login form .underline::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: linear-gradient(to right, rgb(212, 117, 250) 0%, rgb(255, 255, 255) 100%);
+    left: 0;
+    bottom: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.3s ease;
+}
+
+.form_Login form .input-box input:focus ~ .underline::after,
+.form_Login form .input-box input:valid ~ .underline::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.form_Login form .button{
+    margin: 40px 0 20px 0;
+}
+
+.form_Login .input-box input[type="submit"]{
+    background: linear-gradient(to right, rgb(212, 117, 250) 0%, rgb(255, 255, 255) 100%);
+    font-size: 17px;
+    color: #fff;
+    border-radius: 5px;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.form input[type = "submit"]:hover {
-    background: rgba(240,202,255,1);
+.form_Login .input-box input[type="submit"]:hover{
+    letter-spacing: 1px;
+    background: linear-gradient(to left, rgb(212, 117, 250) 0%, rgb(255, 255, 255) 100%);
+}
+
+.form_Login .option1{
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form_Login .option1 a {
+    text-decoration: none;
+    color: rgb(212, 117, 250);
+}
+
+.form_Login .option2{
+    font-size: 14px;
+    text-align: center;
+}
+
+.form_Login .option2 a {
+    text-decoration: none;
+    color: rgb(212, 117, 250);
 }
