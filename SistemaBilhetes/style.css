@@ -76,13 +76,92 @@ body {
     width: 100%;
 }
 
-.article main {
+.article {
     position: auto;
     padding: 2em 2em;
-    margin: 2em 20em;
+    margin: 2rem 20rem;
     background: #fff;
     box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.25);
     border-radius: 10px;
+}
+
+.article .espetaculos .espetaculo1::before,
+.article .espetaculos .espetaculo2::before{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 99%;
+    margin-top: 50.1%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+
+.espetaculo1, .espetaculo2 {
+    margin-bottom: 5rem;
+}
+
+.espetaculo1, .espetaculo2, .espetaculo3 {
+    /* border: 1px solid aqua; */
+    height: 50px;
+    position: relative;
+    border-radius: 10px;
+    position: auto;
+    height: 100%;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.25);
+    transition: .3s ease;
+}
+
+.espetaculo1:hover,
+.espetaculo2:hover, 
+.espetaculo3:hover {
+    box-shadow: none;
+    transition: .3s ease;
+}
+
+.imagem_espetaculo img {
+    height: 10%;
+    width: 70%;
+    border-radius: 20px;
+    border: 5px solid rgb(212, 117, 250);
+    transition: .3s ease;
+}
+
+.imagem_espetaculo img:hover {
+    border: 5px solid #262030;
+    transition: .3s ease;
+}
+
+.dados_espetaculo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 20%;
+}
+
+.comprar_espetaculo button {
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: rgb(212, 117, 250);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.comprar_espetaculo button:hover {
+    background: #fff;
+    color: rgb(212, 117, 250);
+}
+
+.descricao {
+    padding: 2%;
+}
+
+.descricao .nome_espetaculo {
+    font-size: 30px;
+    margin-top: 5%;
 }
 
 /*
@@ -151,13 +230,13 @@ body {
 .user-details .input-box input {
     height: 45px;
     width: 100%;
-    outline: none;
-    border-radius: 5px;
     border: 1px solid #ccc;
-    padding-left: 15px;
+    outline: none;
     font-size: 16px;
-    border-bottom-width: 2px;
-    transition:  all 0.3s ease;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
 }
 
 .user-details .input-box input:focus,
@@ -256,13 +335,13 @@ body {
 
 /*          Login          */
 .form_Login{
-    margin: 17em 78vh;
+    margin: 17rem 47.5rem;
     background: #fff;
     max-width: 350px;
     width: 100%;
     padding: 25px 30px;
     border-radius: 5px;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.25); ;
 }
 
 .form_Login form .title{
@@ -368,6 +447,8 @@ body {
 
 
 
+
+
 /*          Fale Conosco          */
 .contact{
     margin: 2em 20em;
@@ -376,6 +457,7 @@ body {
     box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.25);
     border-radius: 10px;
     padding: 20px 60px 30px 40px;
+    position: relative;
 }
 
 .contact .content{
@@ -415,6 +497,11 @@ body {
     font-size: 30px;
     color: rgb(212, 117, 250);
     margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact .content .left-side .details i:hover{
+    color: #262030;
 }
 
 .contact  .content .left-side .details .topic{
@@ -449,13 +536,24 @@ body {
 .contact .content .right-side .input-box textarea{
     height: 100%;
     width: 100%;
-    border: none;
+    border: 1px solid #ccc;
     outline: none;
     font-size: 16px;
     background: #F0F1F8;
     border-radius: 6px;
     padding: 0 15px;
     resize: none;
+    transition: all 0.3s ease;
+}
+
+.contact .content .right-side .input-box input:hover,
+.contact .content .right-side .input-box textarea:hover {
+    border-color: #262030;
+}
+
+.contact .content .right-side .input-box input:focus,
+.contact .content .right-side .input-box textarea:focus {
+    border-color: #9b59b6;
 }
 
 .contact .content .right-side .message-box{
