@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Sistema Compra Bilhetes</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Sistema Compra Bilhetes</title>
+    </head>
 <body>
 
     <div class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="#">Espetáculos</a></li>
-            <li><a href="#">Minha Conta</a></li>
             <li><a href="formLogin.html">Login</a></li>
         </ul>
     </div>
@@ -27,38 +27,45 @@
         </main>
     </div>  
 
-    <div class="article_footer">
-        <main>
-            <p>
-                <img src="iconmonstr-whatsapp-1.svg">
-                Contatos
-                <p>
-                    teste WhatsApp<br>
-                    teste WhatsApp 2<br>
-                    teste WhatsApp 3</p>
-                </p>
-            </p>
-            <br>
-            <p>
-                <img style="vertical-align:middle" src="iconmonstr-email-4.svg">
-                Emails
-                <p>
-                    teste WhatsApp<br>
-                    teste WhatsApp 2<br>
-                    teste WhatsApp 3</p>
-                </p>
-            </p>
-            <br>
-            <p>
-                <img style="vertical-align:middle" src="iconmonstr-linkedin-3.svg">
-                LinkedIN
-                <p>
-                    teste WhatsApp<br>
-                    teste WhatsApp 2<br>
-                    teste WhatsApp 3</p>
-                </p>
-            </p>
-        </main>
+    <div class="contact">
+        <div class="content">
+            <div class="left-side">
+                <div class="address details">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div class="topic">Endereço</div>
+                    <div class="text-one">Campinas, SP</div>
+                </div>
+                <div class="phone details">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="topic">Telefone</div>
+                    <div class="text-one">(19) 99999-9999</div>
+                </div>
+                <div class="email details">
+                    <i class="fas fa-envelope"></i>
+                    <div class="topic">Email</div>
+                    <div class="text-one">teste@teste.com.br</div>
+                </div>
+            </div>
+            
+            <div class="right-side">
+                <div class="topic-text">Fale Conosco!</div>
+                <p>Se você tiver alguma dúvida ou deseja entrar em contato para fazer um elogio ou reclamação, por favor preencha o formulário abaixo com suas informações. Estamos dispostos a te ajudar!<br><br>Agradecemos o contato!</p>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" placeholder="Insira seu nome">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" placeholder="Insira seu email">
+                    </div>
+                    <div class="input-box message-box">
+                        <textarea placeholder="Escreva aqui sua mensagem..."></textarea>
+                    </div>
+                    <div class="button">
+                        <input type="button" value="Enviar" onclick="location.href='index.html';">
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
     
 </body>
