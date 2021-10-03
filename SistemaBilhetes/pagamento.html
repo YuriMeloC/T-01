@@ -19,33 +19,29 @@
         </ul>
     </div>
 
-    <div class="container">
-        <div class="title">Cadastro</div>
-        <form name="formCadastro" action="">
-            <div class="user-details">
+    <div class="pagamento">
+        <div class="title">Dados de Pagamento</div>
+        <form action="#">
+            <div class="payment-details">
                 <div class="input-box">
-                    <span class="details">Nome Completo</span>
-                    <input type="text" name="nome" placeholder="Insira o seu nome completo" >
+                    <span class="details">Número do Cartão</span>
+                    <input type="text" placeholder="Insira o número do Cartão" maxlength="16" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Validade</span>
+                    <input type="text" placeholder="Insira a validade do Cartão" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">CVV</span>
+                    <input type="text" placeholder="Insira o CVV do Cartão" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Titular do Cartão</span>
+                    <input type="text" placeholder="Insira o titular do Cartão" required>
                 </div>
                 <div class="input-box">
                     <span class="details">CPF</span>
-                    <input type="text" name="cpf" placeholder="Insira seu CPF" >
-                </div>
-                <div class="input-box">
-                    <span class="details">Email</span>
-                    <input type="text" name="email" placeholder="Insira seu e-mail" >
-                </div>
-                <div class="input-box">
-                    <span class="details">Número de Telefone</span>
-                    <input type="text" name="telefone" placeholder="Insira seu número de telefone" >
-                </div>
-                <div class="input-box">
-                    <span class="details">Senha</span>
-                    <input type="text" name="Senha" placeholder="Insira sua senha" >
-                </div>
-                <div class="input-box">
-                    <span class="details">Confirmar Senha</span>
-                    <input type="text" name="confSenha" placeholder="Confirme sua senha" >
+                    <input type="text" placeholder="Insira seu CPF" required>
                 </div>
             </div>
             <!--
@@ -70,8 +66,8 @@
                 </div>
             </div>
             -->
-            <div class="register">
-                <input type="submit" value="Cadastrar-se" onclick="validaCadastro()">
+            <div class="submit">
+                <input type="submit" value="Finalizar Compra" onclick="finaliza()">
             </div>
         </form>
     </div>
