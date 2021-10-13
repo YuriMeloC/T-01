@@ -8,6 +8,23 @@ Nota.... 1.5 pts
 
 Somente 1 diagrama de sequencia foi entregue e está um pouco confuso, talvez vocês tenham tentado colocar em um único diagrama de sequencia todos os casos de uso. O ideal é tentar criar um diagram de sequencia para cada fluxo básico de um diagram de caso de uso.
 
+============================================================================================================================================
+
+T-02 ( 2.0 pontos )
+
+Nota: 0.0 pts
+
+Não recebi os arquivos com os desenhos das arquiteturas.
+
+============================================================================================================================================
+
+
+T-03 ( 2.0 pontos )
+
+Nota: 2.0 pts
+
+============================================================================================================================================
+
 
 
 
