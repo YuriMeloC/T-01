@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts/metodos.js"></script>
+        <title>Sistema Compra Bilhetes</title>
+    </head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="espetaculos.html">Espetáculos</a></li>
+            <li><a href="formLogin.html">Login</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="title">Programa de Fidelidade</div>
+        <form name="formCadastro" action="">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Login</span>
+                    <input type="text" name="login" placeholder="Insira o seu Login" >
+                </div>
+            
+                <div class="input-box">
+                    <span class="details">Senha</span>
+                    <input type="text" name="Senha" placeholder="Insira a sua senha" >
+                </div>
+            </div>
+            <div class="register">
+                <input type="submit" value="Cadastrar-se no programa de fidelidade" onclick="validaFidelidade()">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
