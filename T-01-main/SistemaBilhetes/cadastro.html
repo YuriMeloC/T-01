@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <script src="scripts/metodos.js"></script>
+        <title>Sistema Compra Bilhetes</title>
+    </head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="espetaculos.html">Espetáculos</a></li>
+            <li><a href="formLogin.html">Login</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="title">Cadastro</div>
+        <form name="formCadastro" action="">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Nome Completo</span>
+                    <input type="text" name="nome" placeholder="Insira o seu nome completo" >
+                </div>
+                <div class="input-box">
+                    <span class="details">CPF</span>
+                    <input type="text" name="cpf" placeholder="Insira seu CPF" >
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" name="email" placeholder="Insira seu e-mail" >
+                </div>
+                <div class="input-box">
+                    <span class="details">Número de Telefone</span>
+                    <input type="text" name="telefone" placeholder="Insira seu número de telefone" >
+                </div>
+                <div class="input-box">
+                    <span class="details">Senha</span>
+                    <input type="text" name="Senha" placeholder="Insira sua senha" >
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirmar Senha</span>
+                    <input type="text" name="confSenha" placeholder="Confirme sua senha" >
+                </div>
+            </div>
+            <!--
+            <div class="gender-details">
+                <input type="radio" name="gender" id="dot-1">
+                <input type="radio" name="gender" id="dot-2">
+                <input type="radio" name="gender" id="dot-3">
+                <span class="gender-title">Sexo</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="gender">Masculino</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="gender">Feminino</span>
+                    </label>
+                    <label for="dot-3">
+                        <span class="dot three"></span>
+                        <span class="gender">Prefiro não dizer</span>
+                    </label>
+                </div>
+            </div>
+            -->
+            <div class="register">
+                <input type="submit" value="Cadastrar-se" onclick="validaCadastro()">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
